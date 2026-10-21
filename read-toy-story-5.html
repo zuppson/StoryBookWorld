@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Toy Story 5 by Andrew Stanton - Cartoons story on Story Book World.">
+  <title>Toy Story 5 | Story Book World</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="reader-page">
+  <div class="progress-track" aria-hidden="true"><div class="progress-bar" id="progressBar"></div></div>
+
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+      <div class="brand">
+        <img src="logo.png" alt="Story Book World logo" class="logo">
+        <h1>Now Reading</h1>
+      </div>
+      <div class="nav-links">
+        <a href="Home.html">Home</a>
+        <a href="genre.html" class="active" aria-current="page">Genre</a>
+        <a href="story.html">Stories</a>
+        <a href="about.html">About</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="reader-main">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="genre.html">Genre</a> &rsaquo;
+      <a href="cartoons.html">Cartoons</a> &rsaquo;
+      <span>Toy Story 5</span>
+    </nav>
+
+    <article class="story">
+      <header class="story-head">
+        <figure class="story-cover-wrap">
+          <img class="story-cover" src="toy.jpg" alt="Toy Story 5 book cover">
+        </figure>
+        <div class="story-info">
+          <p class="genre-tag">Cartoons</p>
+          <h2 class="story-title">Toy Story 5</h2>
+          <p class="author">by <span>Andrew Stanton</span></p>
+          <p class="story-stats">1 Chapter &middot; 1 min read</p>
+          <button class="btn btn-outline" id="synopsisBtn" type="button" aria-expanded="true" aria-controls="synopsis">Hide Synopsis</button>
+          <section class="synopsis" id="synopsis">
+            <h3>Synopsis</h3>
+            <p>(2026) is a funny and heartfelt animated adventure where Woody, Buzz Lightyear, Jessie, and the rest of the gang face their toughest rival yet: digital screen time.</p>
+          </section>
+        </div>
+      </header>
+
+      <section class="chapter" aria-labelledby="chapter-title">
+        <h3 class="chapter-title" id="chapter-title">Chapter 1: Toys Versus Screens</h3>
+        <div class="chapter-text">
+          <p>The film shifts the spotlight to Jessie, who takes charge as the leader to help an isolated, screen-obsessed Bonnie break away from her tablet and make real-life friends. When Jessie and Bullseye get separated from Bonnie during a dance-class sleepover, they are taken to the old house of Jessie's original owner, Emily.</p>
+          <p>There, Jessie deals with old feelings of abandonment, only to discover that Emily loved her deeply and even named her daughter, Blae, after her. Meanwhile, Woody returns from his travels with Bo Peep to help the group, and Buzz Lightyear gets caught up in a hilarious subplot involving fifty upgraded, stranded clone models of himself trying to reach Star Command.</p>
+          <p>Realizing that a guilty Lilypad has thrown herself into a donation box after accidentally cyberbullying Bonnie, the toys put aside their rivalry and work together on a daring rescue mission.</p>
+          <p>By utilizing both traditional playtime imagination and the high-tech capabilities of the clone Buzz army, the toys safely reunite and orchestrate a meeting between Bonnie and Blae, successfully teaching Bonnie the value of real friendship and culminating in a joyful, toy-orchestrated wedding for Jessie and Buzz.</p>
+        </div>
+      </section>
+
+      <footer class="story-actions">
+        <button class="like-btn" id="storyLike" type="button">&#9825; <span class="like-count">0</span></button>
+        <a class="btn btn-outline" href="cartoons.html">More Cartoons Stories</a>
+        <a class="btn btn-primary" href="story.html">Browse All Stories</a>
+      </footer>
+    </article>
+
+    <nav class="story-pager" aria-label="More stories in Cartoons">
+      <a class="pager-link" href="read-hotel-transylvania-3-summer-vacation.html"><span>&larr; Previous</span><strong>Hotel Transylvania 3: Summer Vacation</strong></a>
+      <a class="pager-link pager-next" href="read-monster-inc.html"><span>Next &rarr;</span><strong>Monster Inc.</strong></a>
+    </nav>
+  </main>
+
+  <div class="progress-label" id="progressText" aria-hidden="true">0% read</div>
+
+  <footer class="site-footer">
+    <p>&copy; All Rights Reserved 2026</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

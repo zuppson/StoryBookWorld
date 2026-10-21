@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Starwars: The Rise of Skywalkers by J.J. Abrams - Sci-Fi story on Story Book World.">
+  <title>Starwars: The Rise of Skywalkers | Story Book World</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="reader-page">
+  <div class="progress-track" aria-hidden="true"><div class="progress-bar" id="progressBar"></div></div>
+
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+      <div class="brand">
+        <img src="logo.png" alt="Story Book World logo" class="logo">
+        <h1>Now Reading</h1>
+      </div>
+      <div class="nav-links">
+        <a href="Home.html">Home</a>
+        <a href="genre.html" class="active" aria-current="page">Genre</a>
+        <a href="story.html">Stories</a>
+        <a href="about.html">About</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="reader-main">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="genre.html">Genre</a> &rsaquo;
+      <a href="scifi.html">Sci-Fi</a> &rsaquo;
+      <span>Starwars: The Rise of Skywalkers</span>
+    </nav>
+
+    <article class="story">
+      <header class="story-head">
+        <figure class="story-cover-wrap">
+          <img class="story-cover" src="starwars.jpg" alt="Starwars: The Rise of Skywalkers book cover">
+        </figure>
+        <div class="story-info">
+          <p class="genre-tag">Sci-Fi</p>
+          <h2 class="story-title">Starwars: The Rise of Skywalkers</h2>
+          <p class="author">by <span>J.J. Abrams</span></p>
+          <p class="story-stats">1 Chapter &middot; 1 min read</p>
+          <button class="btn btn-outline" id="synopsisBtn" type="button" aria-expanded="true" aria-controls="synopsis">Hide Synopsis</button>
+          <section class="synopsis" id="synopsis">
+            <h3>Synopsis</h3>
+            <p>(2019) Follows the Resistance as they face the return of Emperor Palpatine. Meanwhile, Rey completes her Jedi training while navigating her mysterious past and her intense, Force-connected bond with Kylo Ren.</p>
+          </section>
+        </div>
+      </header>
+
+      <section class="chapter" aria-labelledby="chapter-title">
+        <h3 class="chapter-title" id="chapter-title">Chapter 1: The Secret of Exegol</h3>
+        <div class="chapter-text">
+          <p>Follows Rey, Finn, and Poe Dameron as they race against time to locate Exegol, a hidden Sith world where a resurrected Emperor Palpatine has secretly constructed a massive armada called the Final Order. Kylo Ren hunts Rey down to bring her to Palpatine, only to discover that Rey is actually the Emperor's granddaughter.</p>
+          <p>After a series of fierce confrontations—including a climactic duel on the ruins of the Death Star where Leia Organa passes away to redeem her son—Kylo abandons the dark side and reclaims his identity as Ben Solo. Rey travels to Exegol to confront Palpatine, who attempts to absorb her and Ben's unique Force dyad power to restore his youth.</p>
+          <p>Supported by the spirits of past Jedi and a massive civilian fleet assembled by Lando Calrissian to crush the Sith armada, Rey channels the power of all Jedi to permanently destroy Palpatine at the cost of her life.</p>
+          <p>Ben uses his remaining life force to revive her, dying in the process, which allows Rey to return to Tatooine, bury the lightsabers of Luke and Leia, and honor their legacy by adopting the name Rey Skywalker.</p>
+        </div>
+      </section>
+
+      <footer class="story-actions">
+        <button class="like-btn" id="storyLike" type="button">&#9825; <span class="like-count">0</span></button>
+        <a class="btn btn-outline" href="scifi.html">More Sci-Fi Stories</a>
+        <a class="btn btn-primary" href="story.html">Browse All Stories</a>
+      </footer>
+    </article>
+
+    <nav class="story-pager" aria-label="More stories in Sci-Fi">
+      <a class="pager-link" href="read-project-hail-mary.html"><span>&larr; Previous</span><strong>Project Hail Mary</strong></a>
+      <a class="pager-link pager-next" href="read-the-great-flood.html"><span>Next &rarr;</span><strong>The Great Flood</strong></a>
+    </nav>
+  </main>
+
+  <div class="progress-label" id="progressText" aria-hidden="true">0% read</div>
+
+  <footer class="site-footer">
+    <p>&copy; All Rights Reserved 2026</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mr.Bean by Rowan Atkinson - Comedy story on Story Book World.">
+  <title>Mr.Bean | Story Book World</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="reader-page">
+  <div class="progress-track" aria-hidden="true"><div class="progress-bar" id="progressBar"></div></div>
+
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+      <div class="brand">
+        <img src="logo.png" alt="Story Book World logo" class="logo">
+        <h1>Now Reading</h1>
+      </div>
+      <div class="nav-links">
+        <a href="Home.html">Home</a>
+        <a href="genre.html" class="active" aria-current="page">Genre</a>
+        <a href="story.html">Stories</a>
+        <a href="about.html">About</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="reader-main">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="genre.html">Genre</a> &rsaquo;
+      <a href="comedy.html">Comedy</a> &rsaquo;
+      <span>Mr.Bean</span>
+    </nav>
+
+    <article class="story">
+      <header class="story-head">
+        <figure class="story-cover-wrap">
+          <img class="story-cover" src="bean.jpg" alt="Mr.Bean book cover">
+        </figure>
+        <div class="story-info">
+          <p class="genre-tag">Comedy</p>
+          <h2 class="story-title">Mr.Bean</h2>
+          <p class="author">by <span>Rowan Atkinson</span></p>
+          <p class="story-stats">1 Chapter &middot; 1 min read</p>
+          <button class="btn btn-outline" id="synopsisBtn" type="button" aria-expanded="true" aria-controls="synopsis">Hide Synopsis</button>
+          <section class="synopsis" id="synopsis">
+            <h3>Synopsis</h3>
+            <p>A clumsy British art gallery guard is sent to Los Angeles under the guise of an art scholar to oversee a famous painting's unveiling, causing massive chaos.</p>
+          </section>
+        </div>
+      </header>
+
+      <section class="chapter" aria-labelledby="chapter-title">
+        <h3 class="chapter-title" id="chapter-title">Chapter 1: The Masterpiece Mishap</h3>
+        <div class="chapter-text">
+          <p>follows an inept British museum guard who is sent to Los Angeles under the guise of an elite art scholar to oversee the unveiling of the $50 million masterpiece Whistler's Mother.</p>
+          <p>After accidentally ruining the priceless painting with ink and paint thinner, he sneaks into the gallery at night and replaces it with a poster replica coated in egg whites, successfully fooling the public before returning to London with the defaced original canvas.</p>
+        </div>
+      </section>
+
+      <footer class="story-actions">
+        <button class="like-btn" id="storyLike" type="button">&#9825; <span class="like-count">0</span></button>
+        <a class="btn btn-outline" href="comedy.html">More Comedy Stories</a>
+        <a class="btn btn-primary" href="story.html">Browse All Stories</a>
+      </footer>
+    </article>
+
+    <nav class="story-pager" aria-label="More stories in Comedy">
+      <a class="pager-link" href="read-haba-habadoo-puti-putipoo.html"><span>&larr; Previous</span><strong>Haba-habadoo, Puti-putipoo</strong></a>
+      <a class="pager-link pager-next" href="read-home-alone.html"><span>Next &rarr;</span><strong>Home Alone</strong></a>
+    </nav>
+  </main>
+
+  <div class="progress-label" id="progressText" aria-hidden="true">0% read</div>
+
+  <footer class="site-footer">
+    <p>&copy; All Rights Reserved 2026</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

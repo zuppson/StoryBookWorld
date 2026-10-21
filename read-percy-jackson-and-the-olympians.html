@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Percy Jackson and the Olympians by Rick Riordan - Fantasy story on Story Book World.">
+  <title>Percy Jackson and the Olympians | Story Book World</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="reader-page">
+  <div class="progress-track" aria-hidden="true"><div class="progress-bar" id="progressBar"></div></div>
+
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+      <div class="brand">
+        <img src="logo.png" alt="Story Book World logo" class="logo">
+        <h1>Now Reading</h1>
+      </div>
+      <div class="nav-links">
+        <a href="Home.html">Home</a>
+        <a href="genre.html" class="active" aria-current="page">Genre</a>
+        <a href="story.html">Stories</a>
+        <a href="about.html">About</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="reader-main">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="genre.html">Genre</a> &rsaquo;
+      <a href="fantasy.html">Fantasy</a> &rsaquo;
+      <span>Percy Jackson and the Olympians</span>
+    </nav>
+
+    <article class="story">
+      <header class="story-head">
+        <figure class="story-cover-wrap">
+          <img class="story-cover" src="percy.jpg" alt="Percy Jackson and the Olympians book cover">
+        </figure>
+        <div class="story-info">
+          <p class="genre-tag">Fantasy</p>
+          <h2 class="story-title">Percy Jackson and the Olympians</h2>
+          <p class="author">by <span>Rick Riordan</span></p>
+          <p class="story-stats">1 Chapter &middot; 1 min read</p>
+          <button class="btn btn-outline" id="synopsisBtn" type="button" aria-expanded="true" aria-controls="synopsis">Hide Synopsis</button>
+          <section class="synopsis" id="synopsis">
+            <h3>Synopsis</h3>
+            <p>(2010) is a fantasy adventure film about a teen who discovers he is a demigod son of Poseidon and must navigate a secret world of Greek mythology to prevent a war among the gods.</p>
+          </section>
+        </div>
+      </header>
+
+      <section class="chapter" aria-labelledby="chapter-title">
+        <h3 class="chapter-title" id="chapter-title">Chapter 1: A Demigod Called Percy</h3>
+        <div class="chapter-text">
+          <p>After being falsely accused by Zeus of stealing his master lightning bolt, sixteen-year-old Percy Jackson is taken to Camp Half-Blood—a secret training sanctuary for demigods—where he learns his true heritage as a son of Poseidon.</p>
+          <p>When Hades kidnaps Percy's mother to trade her for the missing bolt, Percy sneaks out of camp accompanied by his satyr protector Grover and Athena's warrior daughter Annabeth on a cross-country quest to rescue her from the Underworld. Along their journey, they battle mythological monsters like Medusa and the Hydra to collect magical pearls that will secure their escape.</p>
+          <p>Upon reaching the Underworld, Percy discovers that the rogue demigod Luke Castellan hid the bolt inside his shield to frame him, prompting Percy to defeat Luke in a fierce battle atop New York City, return the bolt to Zeus on Mount Olympus just in time, and successfully clear his father's name.</p>
+        </div>
+      </section>
+
+      <footer class="story-actions">
+        <button class="like-btn" id="storyLike" type="button">&#9825; <span class="like-count">0</span></button>
+        <a class="btn btn-outline" href="fantasy.html">More Fantasy Stories</a>
+        <a class="btn btn-primary" href="story.html">Browse All Stories</a>
+      </footer>
+    </article>
+
+    <nav class="story-pager" aria-label="More stories in Fantasy">
+      <a class="pager-link" href="read-harry-potter.html"><span>&larr; Previous</span><strong>Harry Potter</strong></a>
+      <a class="pager-link pager-next" href="read-the-worst-witch.html"><span>Next &rarr;</span><strong>The Worst Witch</strong></a>
+    </nav>
+  </main>
+
+  <div class="progress-label" id="progressText" aria-hidden="true">0% read</div>
+
+  <footer class="site-footer">
+    <p>&copy; All Rights Reserved 2026</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Curve by Tim Egan - Thriller story on Story Book World.">
+  <title>Curve | Story Book World</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="reader-page">
+  <div class="progress-track" aria-hidden="true"><div class="progress-bar" id="progressBar"></div></div>
+
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+      <div class="brand">
+        <img src="logo.png" alt="Story Book World logo" class="logo">
+        <h1>Now Reading</h1>
+      </div>
+      <div class="nav-links">
+        <a href="Home.html">Home</a>
+        <a href="genre.html" class="active" aria-current="page">Genre</a>
+        <a href="story.html">Stories</a>
+        <a href="about.html">About</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="reader-main">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="genre.html">Genre</a> &rsaquo;
+      <a href="thriller.html">Thriller</a> &rsaquo;
+      <span>Curve</span>
+    </nav>
+
+    <article class="story">
+      <header class="story-head">
+        <figure class="story-cover-wrap">
+          <img class="story-cover" src="curve.jpg" alt="Curve book cover">
+        </figure>
+        <div class="story-info">
+          <p class="genre-tag">Thriller</p>
+          <h2 class="story-title">Curve</h2>
+          <p class="author">by <span>Tim Egan</span></p>
+          <p class="story-stats">1 Chapter &middot; 1 min read</p>
+          <button class="btn btn-outline" id="synopsisBtn" type="button" aria-expanded="true" aria-controls="synopsis">Hide Synopsis</button>
+          <section class="synopsis" id="synopsis">
+            <h3>Synopsis</h3>
+            <p>Curve (2016) is a critically acclaimed, minimalist horror-thriller short film written and directed by Tim Egan. The story centers entirely on an unnamed young woman who wakes up injured and trapped on a massive, smooth, and dangerously slippery concrete structure.</p>
+          </section>
+        </div>
+      </header>
+
+      <section class="chapter" aria-labelledby="chapter-title">
+        <h3 class="chapter-title" id="chapter-title">Chapter 1: The Slippery Slope</h3>
+        <div class="chapter-text">
+          <p>The film opens with an unnamed woman waking up from unconsciousness on the steep, curved slope of a mysterious concrete structure, with her leg folded awkwardly beneath her.</p>
+          <p>As she attempts to move, she immediately realizes the terrifying gravity of her situation: the smooth concrete provides almost no friction, and directly below her is a pitch-black, seemingly sentient void that echoes with the distant screams of previous victims. Across the chasm, she notices ominous, dried blood streaks that track downward, confirming that others have tried and failed to climb to safety.</p>
+          <p>Desperately trying to move upward, every micro-movement causes her to painfully scrape her hands and slide closer to the edge. Her struggle intensifies drastically when a rainstorm begins, lubricating the concrete surface and causing her to lose her footing entirely. In a final, agonizing act of survival, she rips off her metal necklace and wraps it around her hand to scratch into the concrete for leverage.</p>
+          <p>The film ends on a hauntingly ambiguous note, cutting to a shot of the now-empty concrete curve with only the sound of rain, leaving the viewer to decide whether she managed to hold on or finally plummeted into the abyss.</p>
+        </div>
+      </section>
+
+      <footer class="story-actions">
+        <button class="like-btn" id="storyLike" type="button">&#9825; <span class="like-count">0</span></button>
+        <a class="btn btn-outline" href="thriller.html">More Thriller Stories</a>
+        <a class="btn btn-primary" href="story.html">Browse All Stories</a>
+      </footer>
+    </article>
+
+    <nav class="story-pager" aria-label="More stories in Thriller">
+      <a class="pager-link" href="read-127-hours.html"><span>&larr; Previous</span><strong>127 Hours</strong></a>
+      <a class="pager-link pager-next" href="read-fall.html"><span>Next &rarr;</span><strong>Fall</strong></a>
+    </nav>
+  </main>
+
+  <div class="progress-label" id="progressText" aria-hidden="true">0% read</div>
+
+  <footer class="site-footer">
+    <p>&copy; All Rights Reserved 2026</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

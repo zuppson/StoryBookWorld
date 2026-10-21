@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="127 Hours by Danny Boyle - Thriller story on Story Book World.">
+  <title>127 Hours | Story Book World</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="reader-page">
+  <div class="progress-track" aria-hidden="true"><div class="progress-bar" id="progressBar"></div></div>
+
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+      <div class="brand">
+        <img src="logo.png" alt="Story Book World logo" class="logo">
+        <h1>Now Reading</h1>
+      </div>
+      <div class="nav-links">
+        <a href="Home.html">Home</a>
+        <a href="genre.html" class="active" aria-current="page">Genre</a>
+        <a href="story.html">Stories</a>
+        <a href="about.html">About</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="reader-main">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="genre.html">Genre</a> &rsaquo;
+      <a href="thriller.html">Thriller</a> &rsaquo;
+      <span>127 Hours</span>
+    </nav>
+
+    <article class="story">
+      <header class="story-head">
+        <figure class="story-cover-wrap">
+          <img class="story-cover" src="127.jpg" alt="127 Hours book cover">
+        </figure>
+        <div class="story-info">
+          <p class="genre-tag">Thriller</p>
+          <h2 class="story-title">127 Hours</h2>
+          <p class="author">by <span>Danny Boyle</span></p>
+          <p class="story-stats">1 Chapter &middot; 2 min read</p>
+          <button class="btn btn-outline" id="synopsisBtn" type="button" aria-expanded="true" aria-controls="synopsis">Hide Synopsis</button>
+          <section class="synopsis" id="synopsis">
+            <h3>Synopsis</h3>
+            <p>127 Hours is a 2010 biographical survival drama film directed by Danny Boyle and starring James Franco.</p>
+          </section>
+        </div>
+      </header>
+
+      <section class="chapter" aria-labelledby="chapter-title">
+        <h3 class="chapter-title" id="chapter-title">Chapter 1: Trapped in Bluejohn Canyon</h3>
+        <div class="chapter-text">
+          <p>The story begins in April 2003 as thrill-seeker Aron Ralston sets off on a solo weekend hiking trip through Utah's Bluejohn Canyon without informing anyone of his plans. After crossing paths with and guiding two lost hikers, Kristi and Megan, Aron continues deeper into the secluded crevices until he slips, causing a massive boulder to dislodge and permanently wedge his right forearm against the canyon wall.</p>
+          <p>Over the course of the next five days, Aron is pushed to his absolute psychological and physical limits as he severely rations a tiny supply of water, battles hypothermia and dehydration, and records a poignant video diary on his camcorder intended for his family.</p>
+          <p>Plagued by vivid, desperate hallucinations of his past relationships and unlived future, he realizes that no rescue party is coming and that he will die in the canyon. In a final, agonizing act of sheer human will on the sixth day, Aron uses his cheap, dull multi-tool pocket knife to intentionally break his own forearm bones and amputate his trapped arm.</p>
+          <p>Bleeding profusely, he wraps his stump, rappels down a 65-foot cliff wall, and hikes out into the desert heat until he is spotted by a vacationing family and ultimately rescued by a helicopter.</p>
+        </div>
+      </section>
+
+      <footer class="story-actions">
+        <button class="like-btn" id="storyLike" type="button">&#9825; <span class="like-count">0</span></button>
+        <a class="btn btn-outline" href="thriller.html">More Thriller Stories</a>
+        <a class="btn btn-primary" href="story.html">Browse All Stories</a>
+      </footer>
+    </article>
+
+    <nav class="story-pager" aria-label="More stories in Thriller">
+      <a class="pager-link" href="read-fall.html"><span>&larr; Previous</span><strong>Fall</strong></a>
+      <a class="pager-link pager-next" href="read-curve.html"><span>Next &rarr;</span><strong>Curve</strong></a>
+    </nav>
+  </main>
+
+  <div class="progress-label" id="progressText" aria-hidden="true">0% read</div>
+
+  <footer class="site-footer">
+    <p>&copy; All Rights Reserved 2026</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

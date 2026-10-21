@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sweet Tooth by Jeff Lemire - Adventure story on Story Book World.">
+  <title>Sweet Tooth | Story Book World</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="reader-page">
+  <div class="progress-track" aria-hidden="true"><div class="progress-bar" id="progressBar"></div></div>
+
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+      <div class="brand">
+        <img src="logo.png" alt="Story Book World logo" class="logo">
+        <h1>Now Reading</h1>
+      </div>
+      <div class="nav-links">
+        <a href="Home.html">Home</a>
+        <a href="genre.html" class="active" aria-current="page">Genre</a>
+        <a href="story.html">Stories</a>
+        <a href="about.html">About</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="reader-main">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="genre.html">Genre</a> &rsaquo;
+      <a href="adventure.html">Adventure</a> &rsaquo;
+      <span>Sweet Tooth</span>
+    </nav>
+
+    <article class="story">
+      <header class="story-head">
+        <figure class="story-cover-wrap">
+          <img class="story-cover" src="sweet.jpg" alt="Sweet Tooth book cover">
+        </figure>
+        <div class="story-info">
+          <p class="genre-tag">Adventure</p>
+          <h2 class="story-title">Sweet Tooth</h2>
+          <p class="author">by <span>Jeff Lemire</span></p>
+          <p class="story-stats">1 Chapter &middot; 1 min read</p>
+          <button class="btn btn-outline" id="synopsisBtn" type="button" aria-expanded="true" aria-controls="synopsis">Hide Synopsis</button>
+          <section class="synopsis" id="synopsis">
+            <h3>Synopsis</h3>
+            <p>(2021–2024) is a post-apocalyptic fantasy series about Gus, a half-human, half-deer hybrid boy, who leaves his isolated home to travel across a pandemic-ravaged America with a gruff protector to find his mother.</p>
+          </section>
+        </div>
+      </header>
+
+      <section class="chapter" aria-labelledby="chapter-title">
+        <h3 class="chapter-title" id="chapter-title">Chapter 1: The Boy Beyond the Fence</h3>
+        <div class="chapter-text">
+          <p>The story is set a decade after a catastrophic pandemic known as "The Great Crumble" wiped out most of humanity, an event that mysteriously coincided with the emergence of hybrid babies born part-human, part-animal.</p>
+          <p>Believing hybrids are hunted out of fear, Gus's father raises him in a secluded forest cabin, but after his father dies of the virus, a lonely Gus burns his fence down and is nearly captured by poachers called "Last Men".</p>
+          <p>Rescued by a hardened, wandering loner named Tommy "Big Man" Jepperd, Gus convinces the reluctant traveler to protect him on an extraordinary cross-country expedition to Colorado to find his mother, Birdie.</p>
+          <p>Along the way, they form a ragtag family of allies, escape the tyrannical General Abbot who hunts hybrids to engineer a selective cure, and ultimately journey all the way to Alaska where Gus finally learns that he was the very first hybrid ever created, eventually helping heal the rift between humanity and nature.</p>
+        </div>
+      </section>
+
+      <footer class="story-actions">
+        <button class="like-btn" id="storyLike" type="button">&#9825; <span class="like-count">0</span></button>
+        <a class="btn btn-outline" href="adventure.html">More Adventure Stories</a>
+        <a class="btn btn-primary" href="story.html">Browse All Stories</a>
+      </footer>
+    </article>
+
+    <nav class="story-pager" aria-label="More stories in Adventure">
+      <a class="pager-link" href="read-jumanji-welcome-to-the-world.html"><span>&larr; Previous</span><strong>Jumanji: Welcome to the World</strong></a>
+      <a class="pager-link pager-next" href="read-journey-to-the-center-of-earth.html"><span>Next &rarr;</span><strong>Journey to the Center of Earth</strong></a>
+    </nav>
+  </main>
+
+  <div class="progress-label" id="progressText" aria-hidden="true">0% read</div>
+
+  <footer class="site-footer">
+    <p>&copy; All Rights Reserved 2026</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

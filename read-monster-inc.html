@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Monster Inc. by Pete Docter - Cartoons story on Story Book World.">
+  <title>Monster Inc. | Story Book World</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="reader-page">
+  <div class="progress-track" aria-hidden="true"><div class="progress-bar" id="progressBar"></div></div>
+
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+      <div class="brand">
+        <img src="logo.png" alt="Story Book World logo" class="logo">
+        <h1>Now Reading</h1>
+      </div>
+      <div class="nav-links">
+        <a href="Home.html">Home</a>
+        <a href="genre.html" class="active" aria-current="page">Genre</a>
+        <a href="story.html">Stories</a>
+        <a href="about.html">About</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="reader-main">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="genre.html">Genre</a> &rsaquo;
+      <a href="cartoons.html">Cartoons</a> &rsaquo;
+      <span>Monster Inc.</span>
+    </nav>
+
+    <article class="story">
+      <header class="story-head">
+        <figure class="story-cover-wrap">
+          <img class="story-cover" src="monster.jpg" alt="Monster Inc. book cover">
+        </figure>
+        <div class="story-info">
+          <p class="genre-tag">Cartoons</p>
+          <h2 class="story-title">Monster Inc.</h2>
+          <p class="author">by <span>Pete Docter</span></p>
+          <p class="story-stats">1 Chapter &middot; 1 min read</p>
+          <button class="btn btn-outline" id="synopsisBtn" type="button" aria-expanded="true" aria-controls="synopsis">Hide Synopsis</button>
+          <section class="synopsis" id="synopsis">
+            <h3>Synopsis</h3>
+            <p>(2001) is a heartwarming animated comedy set in the city of Monstropolis, where the local power company generates electricity by harvesting the screams of human children.</p>
+          </section>
+        </div>
+      </header>
+
+      <section class="chapter" aria-labelledby="chapter-title">
+        <h3 class="chapter-title" id="chapter-title">Chapter 1: A Little Girl in Monstropolis</h3>
+        <div class="chapter-text">
+          <p>Sulley and Mike as they desperately try to smuggle the little human girl, whom they nickname "Boo," safely back to her bedroom before the authorities or the Child Detection Agency (CDA) discover her. Along the way, the duo realizes that human children are not toxic or dangerous as monster society has always believed.</p>
+          <p>However, their mission becomes a dangerous rescue operation when they uncover a sinister corporate conspiracy orchestrated by Sulley's chameleon-like rival, Randall Boggs, and their own beloved CEO, Henry J. Waternoose, who have built a machine to forcefully extract screams from kidnapped children.</p>
+          <p>After being banished to the human world and fighting their way back through a massive, motorized closet door warehouse, Sulley and Mike successfully banish Randall, expose Waternoose's crimes to the CDA, and return Boo home.</p>
+          <p>With the factory facing an energy crisis, Sulley revolutionizes the company by proving that children's laughter is ten times more powerful than screams, saving the city and allowing him to ultimately reunite with Boo.</p>
+        </div>
+      </section>
+
+      <footer class="story-actions">
+        <button class="like-btn" id="storyLike" type="button">&#9825; <span class="like-count">0</span></button>
+        <a class="btn btn-outline" href="cartoons.html">More Cartoons Stories</a>
+        <a class="btn btn-primary" href="story.html">Browse All Stories</a>
+      </footer>
+    </article>
+
+    <nav class="story-pager" aria-label="More stories in Cartoons">
+      <a class="pager-link" href="read-toy-story-5.html"><span>&larr; Previous</span><strong>Toy Story 5</strong></a>
+      <a class="pager-link pager-next" href="read-hotel-transylvania-3-summer-vacation.html"><span>Next &rarr;</span><strong>Hotel Transylvania 3: Summer Vacation</strong></a>
+    </nav>
+  </main>
+
+  <div class="progress-label" id="progressText" aria-hidden="true">0% read</div>
+
+  <footer class="site-footer">
+    <p>&copy; All Rights Reserved 2026</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

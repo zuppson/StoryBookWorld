@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Read Comedy stories on Story Book World.">
+  <title>Comedy | Story Book World</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+      <div class="brand">
+        <img src="logo.png" alt="Story Book World logo" class="logo">
+        <h1>Comedy Stories</h1>
+      </div>
+      <div class="nav-links">
+        <a href="Home.html">Home</a>
+        <a href="genre.html" class="active" aria-current="page">Genre</a>
+        <a href="story.html">Stories</a>
+        <a href="about.html">About</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="genre-page">
+    <section class="story-grid" aria-label="Comedy stories">
+      <article class="story-card" data-category="comedy">
+        <img src="homealone.jpg" alt="Home Alone book cover" class="cover">
+        <div class="card-body">
+          <p class="genre-tag">Comedy</p>
+          <h3>Home Alone</h3>
+          <p class="author">by John Hughes</p>
+          <p class="synopsis">(1990) Eight‑year‑old Kevin is accidentally left home alone when his family goes on vacation.</p>
+          <div class="card-actions">
+            <a class="btn btn-primary" href="read-home-alone.html">Read Story</a>
+            <button class="btn btn-outline read-more-btn" type="button">Read More</button>
+          </div>
+        </div>
+      </article>
+      <article class="story-card" data-category="comedy">
+        <img src="pinoy.jpg" alt="Haba-habadoo, Puti-putipoo book cover" class="cover">
+        <div class="card-body">
+          <p class="genre-tag">Comedy</p>
+          <h3>Haba-habadoo, Puti-putipoo</h3>
+          <p class="author">by Divino Reyes</p>
+          <p class="synopsis">A beloved 1998 Filipino comedy film starring the iconic comedic duo Babalu and Redford White.</p>
+          <div class="card-actions">
+            <a class="btn btn-primary" href="read-haba-habadoo-puti-putipoo.html">Read Story</a>
+            <button class="btn btn-outline read-more-btn" type="button">Read More</button>
+          </div>
+        </div>
+      </article>
+      <article class="story-card" data-category="comedy">
+        <img src="bean.jpg" alt="Mr.Bean book cover" class="cover">
+        <div class="card-body">
+          <p class="genre-tag">Comedy</p>
+          <h3>Mr.Bean</h3>
+          <p class="author">by Rowan Atkinson</p>
+          <p class="synopsis">A clumsy British art gallery guard is sent to Los Angeles under the guise of an art scholar to oversee a famous painting's unveiling, causing massive chaos.</p>
+          <div class="card-actions">
+            <a class="btn btn-primary" href="read-mr-bean.html">Read Story</a>
+            <button class="btn btn-outline read-more-btn" type="button">Read More</button>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; All Rights Reserved 2026</p>
+  </footer>
+
+  <div class="story-popup" role="dialog" aria-modal="true" aria-label="Home Alone details">
+    <div class="popup-box">
+      <img src="homealone.jpg" alt="Home Alone full story view">
+      <h3>Home Alone</h3>
+      <p class="popup-meta">by John Hughes &middot; Comedy</p>
+      <p>Follows eight-year-old Kevin McCallister, a mischievous boy who gets banished to the attic the night before a family trip and wakes up to find his chaotic household completely empty, mistakenly believing his angry wish to make his family disappear has come true. While his frantic mother, Kate, desperately tries to book a flight back to Chicago from Paris, Kevin initially relishes his sudden freedom by eating junk food, jumping on beds, and playing with his older brother's belongings. However, his holiday fun quickly shifts to a high-stakes defense mission when he discovers that two bumbling burglars, Harry and Marv (the "Wet Bandits"), have targeted his suburban neighborhood and plan to rob his house on Christmas Eve. Instead of running away, Kevin bravely decides to protect his home by rigging it with a labyrinth of ingenious, painful, and hilarious makeshift booby traps—including icy steps, red-hot doorknobs, and swinging paint cans. After successfully outsmarting and bruising the thieves, Kevin is cornered but gets rescued at the last second by his misunderstood, elderly neighbor, Old Man Marley, allowing the police to finally arrest the duo. The film concludes on Christmas morning as Kevin happily reunites with his returning mother and family, having learned to truly appreciate them, while watching Marley joyfully reconcile with his own estranged son outside.</p>
+      <button class="popup-close" type="button">Close</button>
+    </div>
+  </div>
+  <div class="story-popup" role="dialog" aria-modal="true" aria-label="Haba-habadoo, Puti-putipoo details">
+    <div class="popup-box">
+      <img src="pinoy.jpg" alt="Haba-habadoo, Puti-putipoo full story view">
+      <h3>Haba-habadoo, Puti-putipoo</h3>
+      <p class="popup-meta">by Divino Reyes &middot; Comedy</p>
+      <p>The story follows two clumsy, out-of-work friends who accidentally land a job as babysitters and house sitters for seven chaotic, prank-pulling kids. While trying to survive the children's endless practical jokes, the duo discovers that the head maid is secretly plotting to rob the mansion, forcing them to step up, protect the kids, and save the day.</p>
+      <button class="popup-close" type="button">Close</button>
+    </div>
+  </div>
+  <div class="story-popup" role="dialog" aria-modal="true" aria-label="Mr.Bean details">
+    <div class="popup-box">
+      <img src="bean.jpg" alt="Mr.Bean full story view">
+      <h3>Mr. Bean</h3>
+      <p class="popup-meta">by Rowan Atkinson &middot; Comedy</p>
+      <p>follows an inept British museum guard who is sent to Los Angeles under the guise of an elite art scholar to oversee the unveiling of the $50 million masterpiece Whistler's Mother. After accidentally ruining the priceless painting with ink and paint thinner, he sneaks into the gallery at night and replaces it with a poster replica coated in egg whites, successfully fooling the public before returning to London with the defaced original canvas.</p>
+      <button class="popup-close" type="button">Close</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Read Horror stories on Story Book World.">
+  <title>Horror | Story Book World</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+      <div class="brand">
+        <img src="logo.png" alt="Story Book World logo" class="logo">
+        <h1>Horror Stories</h1>
+      </div>
+      <div class="nav-links">
+        <a href="Home.html">Home</a>
+        <a href="genre.html" class="active" aria-current="page">Genre</a>
+        <a href="story.html">Stories</a>
+        <a href="about.html">About</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="genre-page">
+    <section class="story-grid" aria-label="Horror stories">
+      <article class="story-card" data-category="horror">
+        <img src="obsession.jpg" alt="Obsession book cover" class="cover">
+        <div class="card-body">
+          <p class="genre-tag">Horror</p>
+          <h3>Obsession</h3>
+          <p class="author">by Curry Barker</p>
+          <p class="synopsis">(2026) follows a man who uses a supernatural artifact to force his crush to love him, trapping her soul in purgatory while creating a violently possessive, corrupted version of her in reality.</p>
+          <div class="card-actions">
+            <a class="btn btn-primary" href="read-obsession.html">Read Story</a>
+            <button class="btn btn-outline read-more-btn" type="button">Read More</button>
+          </div>
+        </div>
+      </article>
+      <article class="story-card" data-category="horror">
+        <img src="saw.jpg" alt="Saw book cover" class="cover">
+        <div class="card-body">
+          <p class="genre-tag">Horror</p>
+          <h3>Saw</h3>
+          <p class="author">by James Wan &amp; Leigh Whannell</p>
+          <p class="synopsis">The original Saw (2004) is a psychological horror thriller directed by James Wan.</p>
+          <div class="card-actions">
+            <a class="btn btn-primary" href="read-saw.html">Read Story</a>
+            <button class="btn btn-outline read-more-btn" type="button">Read More</button>
+          </div>
+        </div>
+      </article>
+      <article class="story-card" data-category="horror">
+        <img src="wrong.jpg" alt="Wrong Turn book cover" class="cover">
+        <div class="card-body">
+          <p class="genre-tag">Horror</p>
+          <h3>Wrong Turn</h3>
+          <p class="author">by Alan B. McElroy</p>
+          <p class="synopsis">A popular American slasher-horror media franchise created by screenwriter Alan B. McElroy. The original 2003 film, directed by Rob Schmidt and starring Eliza Dushku and Desmond Harrington,</p>
+          <div class="card-actions">
+            <a class="btn btn-primary" href="read-wrong-turn.html">Read Story</a>
+            <button class="btn btn-outline read-more-btn" type="button">Read More</button>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; All Rights Reserved 2026</p>
+  </footer>
+
+  <div class="story-popup" role="dialog" aria-modal="true" aria-label="Obsession details">
+    <div class="popup-box">
+      <img src="obsession.jpg" alt="Obsession full story view">
+      <h3>Obsession</h3>
+      <p class="popup-meta">by Curry Barker &middot; Horror</p>
+      <p>A socially awkward store clerk named Bear uses a supernatural artifact called the "One Wish Willow" to force his unrequited crush, Nikki, to love him unconditionally, unintentionally trapping her true soul in purgatory while manifesting a violently possessive, corrupted version of her in the real world. As this artificial Nikki's obsession spirals into extreme manipulation and graphic violence against anyone close to them, Bear desperately tries to break the spell, only to find the cosmic contract is completely irreversible. The nightmare reaches a tragic climax when the real Nikki briefly claws her way to consciousness and uses a second willow to wish that Bear loves her until death; this triggers Bear's sudden demise in her arms, which finally breaks the curse and forces Nikki to wake up permanently to face the horrifying trauma and wreckage left behind.</p>
+      <button class="popup-close" type="button">Close</button>
+    </div>
+  </div>
+  <div class="story-popup" role="dialog" aria-modal="true" aria-label="Saw details">
+    <div class="popup-box">
+      <img src="saw.jpg" alt="Saw full story view">
+      <h3>Saw</h3>
+      <p class="popup-meta">by James Wan &amp; Leigh Whannell &middot; Horror</p>
+      <p>The story follows two strangers, a photographer named Adam and an oncologist named Dr. Lawrence Gordon, who wake up chained to pipes in a dilapidated, grimy public bathroom with a corpse lying between them. Through hidden microcassettes, they discover they are pawns in a deadly game orchestrated by the notorious Jigsaw Killer, a terminally ill man named John Kramer who forces his victims into horrific, lethal traps to test their will to live. To save his family, Dr. Gordon is given a strict deadline to kill Adam, leading to a desperate struggle for survival and a legendary twist ending.</p>
+      <button class="popup-close" type="button">Close</button>
+    </div>
+  </div>
+  <div class="story-popup" role="dialog" aria-modal="true" aria-label="Wrong Turn details">
+    <div class="popup-box">
+      <img src="wrong.jpg" alt="Wrong Turn full story view">
+      <h3>Wrong Turn</h3>
+      <p class="popup-meta">by Alan B. McElroy &middot; Horror</p>
+      <p>Follows college student Chris Flynn, who takes a detour through the backwoods of West Virginia to avoid a traffic jam, only to accidentally crash his car into a vehicle belonging to five stranded hikers. Left without cellular service, the group splits up to look for a phone and discovers an isolated mountain cabin filled with gruesome human remains. They quickly realize they are being hunted by Three Finger, Saw Tooth, and One Eye—a trio of deformed, cannibalistic inbred mountain men who use cruel hunting traps to slaughter travelers for meat. After a desperate and bloody game of cat-and-mouse through the forest, watchtowers, and rivers, most of the group is brutally murdered, leaving only Chris and a hiker named Jessie Burlingame to successfully fight back, kill the cannibals, and escape alive in the killers' own truck.</p>
+      <button class="popup-close" type="button">Close</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

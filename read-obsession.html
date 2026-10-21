@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Obsession by Curry Barker - Horror story on Story Book World.">
+  <title>Obsession | Story Book World</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="reader-page">
+  <div class="progress-track" aria-hidden="true"><div class="progress-bar" id="progressBar"></div></div>
+
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+      <div class="brand">
+        <img src="logo.png" alt="Story Book World logo" class="logo">
+        <h1>Now Reading</h1>
+      </div>
+      <div class="nav-links">
+        <a href="Home.html">Home</a>
+        <a href="genre.html" class="active" aria-current="page">Genre</a>
+        <a href="story.html">Stories</a>
+        <a href="about.html">About</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="reader-main">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="genre.html">Genre</a> &rsaquo;
+      <a href="horror.html">Horror</a> &rsaquo;
+      <span>Obsession</span>
+    </nav>
+
+    <article class="story">
+      <header class="story-head">
+        <figure class="story-cover-wrap">
+          <img class="story-cover" src="obsession.jpg" alt="Obsession book cover">
+        </figure>
+        <div class="story-info">
+          <p class="genre-tag">Horror</p>
+          <h2 class="story-title">Obsession</h2>
+          <p class="author">by <span>Curry Barker</span></p>
+          <p class="story-stats">1 Chapter &middot; 1 min read</p>
+          <button class="btn btn-outline" id="synopsisBtn" type="button" aria-expanded="true" aria-controls="synopsis">Hide Synopsis</button>
+          <section class="synopsis" id="synopsis">
+            <h3>Synopsis</h3>
+            <p>(2026) follows a man who uses a supernatural artifact to force his crush to love him, trapping her soul in purgatory while creating a violently possessive, corrupted version of her in reality.</p>
+          </section>
+        </div>
+      </header>
+
+      <section class="chapter" aria-labelledby="chapter-title">
+        <h3 class="chapter-title" id="chapter-title">Chapter 1: The One Wish Willow</h3>
+        <div class="chapter-text">
+          <p>A socially awkward store clerk named Bear uses a supernatural artifact called the "One Wish Willow" to force his unrequited crush, Nikki, to love him unconditionally, unintentionally trapping her true soul in purgatory while manifesting a violently possessive, corrupted version of her in the real world.</p>
+          <p>As this artificial Nikki's obsession spirals into extreme manipulation and graphic violence against anyone close to them, Bear desperately tries to break the spell, only to find the cosmic contract is completely irreversible.</p>
+          <p>The nightmare reaches a tragic climax when the real Nikki briefly claws her way to consciousness and uses a second willow to wish that Bear loves her until death; this triggers Bear's sudden demise in her arms, which finally breaks the curse and forces Nikki to wake up permanently to face the horrifying trauma and wreckage left behind.</p>
+        </div>
+      </section>
+
+      <footer class="story-actions">
+        <button class="like-btn" id="storyLike" type="button">&#9825; <span class="like-count">0</span></button>
+        <a class="btn btn-outline" href="horror.html">More Horror Stories</a>
+        <a class="btn btn-primary" href="story.html">Browse All Stories</a>
+      </footer>
+    </article>
+
+    <nav class="story-pager" aria-label="More stories in Horror">
+      <a class="pager-link" href="read-wrong-turn.html"><span>&larr; Previous</span><strong>Wrong Turn</strong></a>
+      <a class="pager-link pager-next" href="read-saw.html"><span>Next &rarr;</span><strong>Saw</strong></a>
+    </nav>
+  </main>
+
+  <div class="progress-label" id="progressText" aria-hidden="true">0% read</div>
+
+  <footer class="site-footer">
+    <p>&copy; All Rights Reserved 2026</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

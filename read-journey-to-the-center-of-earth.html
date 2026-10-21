@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Journey to the Center of Earth by Jules Verne - Adventure story on Story Book World.">
+  <title>Journey to the Center of Earth | Story Book World</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="reader-page">
+  <div class="progress-track" aria-hidden="true"><div class="progress-bar" id="progressBar"></div></div>
+
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+      <div class="brand">
+        <img src="logo.png" alt="Story Book World logo" class="logo">
+        <h1>Now Reading</h1>
+      </div>
+      <div class="nav-links">
+        <a href="Home.html">Home</a>
+        <a href="genre.html" class="active" aria-current="page">Genre</a>
+        <a href="story.html">Stories</a>
+        <a href="about.html">About</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="reader-main">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="genre.html">Genre</a> &rsaquo;
+      <a href="adventure.html">Adventure</a> &rsaquo;
+      <span>Journey to the Center of Earth</span>
+    </nav>
+
+    <article class="story">
+      <header class="story-head">
+        <figure class="story-cover-wrap">
+          <img class="story-cover" src="journey.jpg" alt="Journey to the Center of Earth book cover">
+        </figure>
+        <div class="story-info">
+          <p class="genre-tag">Adventure</p>
+          <h2 class="story-title">Journey to the Center of Earth</h2>
+          <p class="author">by <span>Jules Verne</span></p>
+          <p class="story-stats">1 Chapter &middot; 1 min read</p>
+          <button class="btn btn-outline" id="synopsisBtn" type="button" aria-expanded="true" aria-controls="synopsis">Hide Synopsis</button>
+          <section class="synopsis" id="synopsis">
+            <h3>Synopsis</h3>
+            <p>(2008) is a 3D adventure film starring Brendan Fraser as a geology professor who, alongside his nephew and a local guide, accidentally falls into a volcanic cave and discovers a wondrous, prehistoric world deep underground.</p>
+          </section>
+        </div>
+      </header>
+
+      <section class="chapter" aria-labelledby="chapter-title">
+        <h3 class="chapter-title" id="chapter-title">Chapter 1: Down Into the Volcano</h3>
+        <div class="chapter-text">
+          <p>When geology professor Trevor Anderson and his nephew Shawn travel to Iceland with local guide Hannah to retrace the steps of Trevor’s missing brother Max, a sudden lightning storm forces them to take shelter in a cave where a landslide seals their exit.</p>
+          <p>Trapped deep underground, they navigate abandoned mine shafts and glowing cavern networks before falling through a fragile layer of rock into a vast, hidden ecosystem at the center of the Earth.</p>
+          <p>Facing extreme heat, giant prehistoric predators like a Giganotosaurus, and dangerous underground oceans, the trio uses Max's old journal and makeshift resources to cross the subterranean realm and trigger a volcanic eruption that safely blasts them back to the surface.</p>
+        </div>
+      </section>
+
+      <footer class="story-actions">
+        <button class="like-btn" id="storyLike" type="button">&#9825; <span class="like-count">0</span></button>
+        <a class="btn btn-outline" href="adventure.html">More Adventure Stories</a>
+        <a class="btn btn-primary" href="story.html">Browse All Stories</a>
+      </footer>
+    </article>
+
+    <nav class="story-pager" aria-label="More stories in Adventure">
+      <a class="pager-link" href="read-sweet-tooth.html"><span>&larr; Previous</span><strong>Sweet Tooth</strong></a>
+      <a class="pager-link pager-next" href="read-jumanji-welcome-to-the-world.html"><span>Next &rarr;</span><strong>Jumanji: Welcome to the World</strong></a>
+    </nav>
+  </main>
+
+  <div class="progress-label" id="progressText" aria-hidden="true">0% read</div>
+
+  <footer class="site-footer">
+    <p>&copy; All Rights Reserved 2026</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Project Hail Mary by Andy Weir - Sci-Fi story on Story Book World.">
+  <title>Project Hail Mary | Story Book World</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="reader-page">
+  <div class="progress-track" aria-hidden="true"><div class="progress-bar" id="progressBar"></div></div>
+
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+      <div class="brand">
+        <img src="logo.png" alt="Story Book World logo" class="logo">
+        <h1>Now Reading</h1>
+      </div>
+      <div class="nav-links">
+        <a href="Home.html">Home</a>
+        <a href="genre.html" class="active" aria-current="page">Genre</a>
+        <a href="story.html">Stories</a>
+        <a href="about.html">About</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="reader-main">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="genre.html">Genre</a> &rsaquo;
+      <a href="scifi.html">Sci-Fi</a> &rsaquo;
+      <span>Project Hail Mary</span>
+    </nav>
+
+    <article class="story">
+      <header class="story-head">
+        <figure class="story-cover-wrap">
+          <img class="story-cover" src="hail.jpg" alt="Project Hail Mary book cover">
+        </figure>
+        <div class="story-info">
+          <p class="genre-tag">Sci-Fi</p>
+          <h2 class="story-title">Project Hail Mary</h2>
+          <p class="author">by <span>Andy Weir</span></p>
+          <p class="story-stats">1 Chapter &middot; 1 min read</p>
+          <button class="btn btn-outline" id="synopsisBtn" type="button" aria-expanded="true" aria-controls="synopsis">Hide Synopsis</button>
+          <section class="synopsis" id="synopsis">
+            <h3>Synopsis</h3>
+            <p>2026 SciFi movie with Ryan Gosling stars as an amnesiac teacher on a lonely space mission to save Earth from a sun-eating microbe, teaming up with an intelligent spider-like alien to stop total extinction.</p>
+          </section>
+        </div>
+      </header>
+
+      <section class="chapter" aria-labelledby="chapter-title">
+        <h3 class="chapter-title" id="chapter-title">Chapter 1: The Man Who Woke Up in Space</h3>
+        <div class="chapter-text">
+          <p>A middle-school science teacher and former molecular biologist named Ryland Grace is recruited by Eva Stratt to investigate a mysterious space microbe called Astrophase that is draining energy from the sun and causing global cooling. After discovering that the nearby star Tau Ceti is mysteriously immune to the parasite, Grace joins a desperate one-way interstellar mission aboard the Hail Mary spacecraft.</p>
+          <p>After waking up from a long-duration coma with total amnesia next to his two deceased crewmates, he pieces together his past, encounters an alien engineer he nicknames Rocky whose star is also dying, and works alongside him to develop a cure.</p>
+          <p>After solving the crisis, Grace realizes Rocky's ship has lost its power source, prompting him to launch his data probes back to Earth and burn his remaining fuel to save his alien friend.</p>
+        </div>
+      </section>
+
+      <footer class="story-actions">
+        <button class="like-btn" id="storyLike" type="button">&#9825; <span class="like-count">0</span></button>
+        <a class="btn btn-outline" href="scifi.html">More Sci-Fi Stories</a>
+        <a class="btn btn-primary" href="story.html">Browse All Stories</a>
+      </footer>
+    </article>
+
+    <nav class="story-pager" aria-label="More stories in Sci-Fi">
+      <a class="pager-link" href="read-the-great-flood.html"><span>&larr; Previous</span><strong>The Great Flood</strong></a>
+      <a class="pager-link pager-next" href="read-starwars-the-rise-of-skywalkers.html"><span>Next &rarr;</span><strong>Starwars: The Rise of Skywalkers</strong></a>
+    </nav>
+  </main>
+
+  <div class="progress-label" id="progressText" aria-hidden="true">0% read</div>
+
+  <footer class="site-footer">
+    <p>&copy; All Rights Reserved 2026</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

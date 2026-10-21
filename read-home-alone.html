@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Home Alone by John Hughes - Comedy story on Story Book World.">
+  <title>Home Alone | Story Book World</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="reader-page">
+  <div class="progress-track" aria-hidden="true"><div class="progress-bar" id="progressBar"></div></div>
+
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+      <div class="brand">
+        <img src="logo.png" alt="Story Book World logo" class="logo">
+        <h1>Now Reading</h1>
+      </div>
+      <div class="nav-links">
+        <a href="Home.html">Home</a>
+        <a href="genre.html" class="active" aria-current="page">Genre</a>
+        <a href="story.html">Stories</a>
+        <a href="about.html">About</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="reader-main">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="genre.html">Genre</a> &rsaquo;
+      <a href="comedy.html">Comedy</a> &rsaquo;
+      <span>Home Alone</span>
+    </nav>
+
+    <article class="story">
+      <header class="story-head">
+        <figure class="story-cover-wrap">
+          <img class="story-cover" src="homealone.jpg" alt="Home Alone book cover">
+        </figure>
+        <div class="story-info">
+          <p class="genre-tag">Comedy</p>
+          <h2 class="story-title">Home Alone</h2>
+          <p class="author">by <span>John Hughes</span></p>
+          <p class="story-stats">1 Chapter &middot; 2 min read</p>
+          <button class="btn btn-outline" id="synopsisBtn" type="button" aria-expanded="true" aria-controls="synopsis">Hide Synopsis</button>
+          <section class="synopsis" id="synopsis">
+            <h3>Synopsis</h3>
+            <p>(1990) Eight‑year‑old Kevin is accidentally left home alone when his family goes on vacation.</p>
+          </section>
+        </div>
+      </header>
+
+      <section class="chapter" aria-labelledby="chapter-title">
+        <h3 class="chapter-title" id="chapter-title">Chapter 1: The House Is Empty</h3>
+        <div class="chapter-text">
+          <p>Follows eight-year-old Kevin McCallister, a mischievous boy who gets banished to the attic the night before a family trip and wakes up to find his chaotic household completely empty, mistakenly believing his angry wish to make his family disappear has come true.</p>
+          <p>While his frantic mother, Kate, desperately tries to book a flight back to Chicago from Paris, Kevin initially relishes his sudden freedom by eating junk food, jumping on beds, and playing with his older brother's belongings.</p>
+          <p>However, his holiday fun quickly shifts to a high-stakes defense mission when he discovers that two bumbling burglars, Harry and Marv (the "Wet Bandits"), have targeted his suburban neighborhood and plan to rob his house on Christmas Eve.</p>
+          <p>Instead of running away, Kevin bravely decides to protect his home by rigging it with a labyrinth of ingenious, painful, and hilarious makeshift booby traps—including icy steps, red-hot doorknobs, and swinging paint cans.</p>
+          <p>After successfully outsmarting and bruising the thieves, Kevin is cornered but gets rescued at the last second by his misunderstood, elderly neighbor, Old Man Marley, allowing the police to finally arrest the duo.</p>
+          <p>The film concludes on Christmas morning as Kevin happily reunites with his returning mother and family, having learned to truly appreciate them, while watching Marley joyfully reconcile with his own estranged son outside.</p>
+        </div>
+      </section>
+
+      <footer class="story-actions">
+        <button class="like-btn" id="storyLike" type="button">&#9825; <span class="like-count">0</span></button>
+        <a class="btn btn-outline" href="comedy.html">More Comedy Stories</a>
+        <a class="btn btn-primary" href="story.html">Browse All Stories</a>
+      </footer>
+    </article>
+
+    <nav class="story-pager" aria-label="More stories in Comedy">
+      <a class="pager-link" href="read-mr-bean.html"><span>&larr; Previous</span><strong>Mr.Bean</strong></a>
+      <a class="pager-link pager-next" href="read-haba-habadoo-puti-putipoo.html"><span>Next &rarr;</span><strong>Haba-habadoo, Puti-putipoo</strong></a>
+    </nav>
+  </main>
+
+  <div class="progress-label" id="progressText" aria-hidden="true">0% read</div>
+
+  <footer class="site-footer">
+    <p>&copy; All Rights Reserved 2026</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Golden Scenery of Tomorrow by Gwy Saludes - Romance story on Story Book World.">
+  <title>Golden Scenery of Tomorrow | Story Book World</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="reader-page">
+  <div class="progress-track" aria-hidden="true"><div class="progress-bar" id="progressBar"></div></div>
+
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+      <div class="brand">
+        <img src="logo.png" alt="Story Book World logo" class="logo">
+        <h1>Now Reading</h1>
+      </div>
+      <div class="nav-links">
+        <a href="Home.html">Home</a>
+        <a href="genre.html" class="active" aria-current="page">Genre</a>
+        <a href="story.html">Stories</a>
+        <a href="about.html">About</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="reader-main">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="genre.html">Genre</a> &rsaquo;
+      <a href="romance.html">Romance</a> &rsaquo;
+      <span>Golden Scenery of Tomorrow</span>
+    </nav>
+
+    <article class="story">
+      <header class="story-head">
+        <figure class="story-cover-wrap">
+          <img class="story-cover" src="golden.jpg" alt="Golden Scenery of Tomorrow book cover">
+        </figure>
+        <div class="story-info">
+          <p class="genre-tag">Romance</p>
+          <h2 class="story-title">Golden Scenery of Tomorrow</h2>
+          <p class="author">by <span>Gwy Saludes</span></p>
+          <p class="story-stats">1 Chapter &middot; 1 min read</p>
+          <button class="btn btn-outline" id="synopsisBtn" type="button" aria-expanded="true" aria-controls="synopsis">Hide Synopsis</button>
+          <section class="synopsis" id="synopsis">
+            <h3>Synopsis</h3>
+            <p>a 2025–2026 Philippine romantic drama series on Viva One. Two childhood best friends grow up together while navigating love, dreams, and new challenges.</p>
+          </section>
+        </div>
+      </header>
+
+      <section class="chapter" aria-labelledby="chapter-title">
+        <h3 class="chapter-title" id="chapter-title">Chapter 1: Best Friends, Secret Hearts</h3>
+        <div class="chapter-text">
+          <p>Tells the story of lifelong best friends Avianna "Via" Diaz, a quiet architecture student, and Larkin "Arkin" Sanchez, a film student who suddenly shoots to fame as a major celebrity. As their close friendship deepens into a secret romance, they face severe friction from the public eye and obsessive fans, which triggers Via's intense anxiety and forces them down separate paths.</p>
+          <p>Seeking peace and space to heal, Via moves to Spain to pursue her architectural career, leading to years of heartbreak, maturity, and painful distance. Ultimately, a new project brings Via back to the Philippines, where she and Arkin face their unresolved feelings, find the courage to confront the past, and finally build the bright, public future together they had always dreamed of.</p>
+        </div>
+      </section>
+
+      <footer class="story-actions">
+        <button class="like-btn" id="storyLike" type="button">&#9825; <span class="like-count">0</span></button>
+        <a class="btn btn-outline" href="romance.html">More Romance Stories</a>
+        <a class="btn btn-primary" href="story.html">Browse All Stories</a>
+      </footer>
+    </article>
+
+    <nav class="story-pager" aria-label="More stories in Romance">
+      <a class="pager-link" href="read-fall-inlove-at-first-kiss.html"><span>&larr; Previous</span><strong>Fall Inlove At First Kiss</strong></a>
+      <a class="pager-link pager-next" href="read-20th-century-girl.html"><span>Next &rarr;</span><strong>20th Century Girl</strong></a>
+    </nav>
+  </main>
+
+  <div class="progress-label" id="progressText" aria-hidden="true">0% read</div>
+
+  <footer class="site-footer">
+    <p>&copy; All Rights Reserved 2026</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

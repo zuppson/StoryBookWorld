@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The Worst Witch by Jill Murphy - Fantasy story on Story Book World.">
+  <title>The Worst Witch | Story Book World</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="reader-page">
+  <div class="progress-track" aria-hidden="true"><div class="progress-bar" id="progressBar"></div></div>
+
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+      <div class="brand">
+        <img src="logo.png" alt="Story Book World logo" class="logo">
+        <h1>Now Reading</h1>
+      </div>
+      <div class="nav-links">
+        <a href="Home.html">Home</a>
+        <a href="genre.html" class="active" aria-current="page">Genre</a>
+        <a href="story.html">Stories</a>
+        <a href="about.html">About</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="reader-main">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="genre.html">Genre</a> &rsaquo;
+      <a href="fantasy.html">Fantasy</a> &rsaquo;
+      <span>The Worst Witch</span>
+    </nav>
+
+    <article class="story">
+      <header class="story-head">
+        <figure class="story-cover-wrap">
+          <img class="story-cover" src="witch.jpg" alt="The Worst Witch book cover">
+        </figure>
+        <div class="story-info">
+          <p class="genre-tag">Fantasy</p>
+          <h2 class="story-title">The Worst Witch</h2>
+          <p class="author">by <span>Jill Murphy</span></p>
+          <p class="story-stats">1 Chapter &middot; 1 min read</p>
+          <button class="btn btn-outline" id="synopsisBtn" type="button" aria-expanded="true" aria-controls="synopsis">Hide Synopsis</button>
+          <section class="synopsis" id="synopsis">
+            <h3>Synopsis</h3>
+            <p>(1986) is a whimsical musical fantasy about Mildred Hubble, a clumsy student at a witch academy. Despite her constant magical mishaps and a ruthless school bully, Mildred must save the school when a sinister plot threatens it before Halloween.</p>
+          </section>
+        </div>
+      </header>
+
+      <section class="chapter" aria-labelledby="chapter-title">
+        <h3 class="chapter-title" id="chapter-title">Chapter 1: The Worst Witch at Miss Cackle's Academy</h3>
+        <div class="chapter-text">
+          <p>Mildred Hubble (Fairuza Balk) is widely considered the absolute "worst witch" at Miss Cackle’s Academy for Witches because she constantly fails her spells, crashes her broomstick, and ruins potions.</p>
+          <p>Her life is made even more difficult by her strict deputy headmistress, Miss Hardbroom (Diana Rigg), and the relentless bullying of her snobbish classmate, Ethel Hallow (Anna Kipling), who ultimately sabotages Mildred’s broomstick performance ahead of a grand Halloween assembly.</p>
+          <p>Feeling hopeless after a disastrous, public embarrassment in front of the revered Grand Wizard (Tim Curry), Mildred decides to run away from school into the surrounding forest. There, she accidentally uncovers a secret plot orchestrated by Agatha Cackle (Charlotte Rae), the evil twin sister of the school's kind headmistress, who plans to infiltrate the academy, turn everyone into toads, and take over.</p>
+          <p>Armed with this critical knowledge, Mildred returns to the school, successfully uses her magic to foil Agatha's wicked group, saves the academy, and is honored as a true hero by the Grand Wizard and her fellow classmates.</p>
+        </div>
+      </section>
+
+      <footer class="story-actions">
+        <button class="like-btn" id="storyLike" type="button">&#9825; <span class="like-count">0</span></button>
+        <a class="btn btn-outline" href="fantasy.html">More Fantasy Stories</a>
+        <a class="btn btn-primary" href="story.html">Browse All Stories</a>
+      </footer>
+    </article>
+
+    <nav class="story-pager" aria-label="More stories in Fantasy">
+      <a class="pager-link" href="read-percy-jackson-and-the-olympians.html"><span>&larr; Previous</span><strong>Percy Jackson and the Olympians</strong></a>
+      <a class="pager-link pager-next" href="read-harry-potter.html"><span>Next &rarr;</span><strong>Harry Potter</strong></a>
+    </nav>
+  </main>
+
+  <div class="progress-label" id="progressText" aria-hidden="true">0% read</div>
+
+  <footer class="site-footer">
+    <p>&copy; All Rights Reserved 2026</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

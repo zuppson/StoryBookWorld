@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Hotel Transylvania 3: Summer Vacation by Genndy Tartakovsky - Cartoons story on Story Book World.">
+  <title>Hotel Transylvania 3: Summer Vacation | Story Book World</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="reader-page">
+  <div class="progress-track" aria-hidden="true"><div class="progress-bar" id="progressBar"></div></div>
+
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+      <div class="brand">
+        <img src="logo.png" alt="Story Book World logo" class="logo">
+        <h1>Now Reading</h1>
+      </div>
+      <div class="nav-links">
+        <a href="Home.html">Home</a>
+        <a href="genre.html" class="active" aria-current="page">Genre</a>
+        <a href="story.html">Stories</a>
+        <a href="about.html">About</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="reader-main">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="genre.html">Genre</a> &rsaquo;
+      <a href="cartoons.html">Cartoons</a> &rsaquo;
+      <span>Hotel Transylvania 3: Summer Vacation</span>
+    </nav>
+
+    <article class="story">
+      <header class="story-head">
+        <figure class="story-cover-wrap">
+          <img class="story-cover" src="hotel.jpg" alt="Hotel Transylvania 3: Summer Vacation book cover">
+        </figure>
+        <div class="story-info">
+          <p class="genre-tag">Cartoons</p>
+          <h2 class="story-title">Hotel Transylvania 3: Summer Vacation</h2>
+          <p class="author">by <span>Genndy Tartakovsky</span></p>
+          <p class="story-stats">1 Chapter &middot; 1 min read</p>
+          <button class="btn btn-outline" id="synopsisBtn" type="button" aria-expanded="true" aria-controls="synopsis">Hide Synopsis</button>
+          <section class="synopsis" id="synopsis">
+            <h3>Synopsis</h3>
+            <p>(2018) is a vibrant and zany animated comedy that follows Count Dracula and his monster pack as they embark on a luxury family cruise organized by his daughter, Mavis, to give him a break from managing the hotel.</p>
+          </section>
+        </div>
+      </header>
+
+      <section class="chapter" aria-labelledby="chapter-title">
+        <h3 class="chapter-title" id="chapter-title">Chapter 1: All Aboard the Monster Cruise</h3>
+        <div class="chapter-text">
+          <p>The monster family as they sail through the Bermuda Triangle toward the lost city of Atlantis, unaware that Ericka and her fully mechanized great-grandfather have plotted a trap. Despite Ericka making multiple undercover attempts to assassinate Dracula during the voyage, his genuine kindness and affection slowly win her over, causing her to question her family's ancestral hatred.</p>
+          <p>The conflict reaches its climax in Atlantis, where Van Helsing uses an ancient Instrument of Destruction to play an evil melody that brainwashes a giant kraken into attacking the monsters. In a goofy, high-stakes climax, Dracula's son-in-law Johnny counters the curse by staging a DJ battle and playing the upbeat song "Macarena," which frees the kraken and restores peace.</p>
+          <p>Ultimately, Ericka rejects her legacy, saves Dracula's life, and confesses her love for him, prompting the reformed Van Helsing family to accept the monsters and culminating in Dracula successfully proposing to Ericka back home.</p>
+        </div>
+      </section>
+
+      <footer class="story-actions">
+        <button class="like-btn" id="storyLike" type="button">&#9825; <span class="like-count">0</span></button>
+        <a class="btn btn-outline" href="cartoons.html">More Cartoons Stories</a>
+        <a class="btn btn-primary" href="story.html">Browse All Stories</a>
+      </footer>
+    </article>
+
+    <nav class="story-pager" aria-label="More stories in Cartoons">
+      <a class="pager-link" href="read-monster-inc.html"><span>&larr; Previous</span><strong>Monster Inc.</strong></a>
+      <a class="pager-link pager-next" href="read-toy-story-5.html"><span>Next &rarr;</span><strong>Toy Story 5</strong></a>
+    </nav>
+  </main>
+
+  <div class="progress-label" id="progressText" aria-hidden="true">0% read</div>
+
+  <footer class="site-footer">
+    <p>&copy; All Rights Reserved 2026</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

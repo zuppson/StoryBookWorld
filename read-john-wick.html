@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="John Wick by Derek Kolstad - Action story on Story Book World.">
+  <title>John Wick | Story Book World</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="reader-page">
+  <div class="progress-track" aria-hidden="true"><div class="progress-bar" id="progressBar"></div></div>
+
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+      <div class="brand">
+        <img src="logo.png" alt="Story Book World logo" class="logo">
+        <h1>Now Reading</h1>
+      </div>
+      <div class="nav-links">
+        <a href="Home.html">Home</a>
+        <a href="genre.html" class="active" aria-current="page">Genre</a>
+        <a href="story.html">Stories</a>
+        <a href="about.html">About</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="reader-main">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="genre.html">Genre</a> &rsaquo;
+      <a href="action.html">Action</a> &rsaquo;
+      <span>John Wick</span>
+    </nav>
+
+    <article class="story">
+      <header class="story-head">
+        <figure class="story-cover-wrap">
+          <img class="story-cover" src="jwick.jpg" alt="John Wick book cover">
+        </figure>
+        <div class="story-info">
+          <p class="genre-tag">Action</p>
+          <h2 class="story-title">John Wick</h2>
+          <p class="author">by <span>Derek Kolstad</span></p>
+          <p class="story-stats">1 Chapter &middot; 1 min read</p>
+          <button class="btn btn-outline" id="synopsisBtn" type="button" aria-expanded="true" aria-controls="synopsis">Hide Synopsis</button>
+          <section class="synopsis" id="synopsis">
+            <h3>Synopsis</h3>
+            <p>(2024) A retired fighter comes back to seek justice after his beloved pet is harmed and his car is stolen.</p>
+          </section>
+        </div>
+      </header>
+
+      <section class="chapter" aria-labelledby="chapter-title">
+        <h3 class="chapter-title" id="chapter-title">Chapter 1: The Quiet Life Ends</h3>
+        <div class="chapter-text">
+          <p>A legendary and feared retired assassin who is deeply grieving the sudden death of his beloved wife, Helen. His fragile attempt at a peaceful life is shattered when arrogant Russian mob prince Iosef Tarasov and his thugs break into John's home, brutally assault him, steal his prized 1969 Mustang, and kill Daisy—a beagle puppy left to him as a final, posthumous gift from his wife to help him cope with his grief.</p>
+          <p>Consumed by a desire for cold revenge, John unearths his meticulously concealed arsenal of weapons and re-enters the dark, highly structured criminal underworld governed by the rules of the Continental Hotel.</p>
+          <p>Despite the desperate interventions of Iosef’s father, the powerful syndicate boss Viggo Tarasov—who fully understands John's terrifying reputation as the "Baba Yaga" and places a massive $2 million bounty on his head—John relentlessly dismantles Viggo's entire army.</p>
+          <p>Surviving hits from rival assassins and receiving covert assistance from his old sniper mentor Marcus, John successfully hunts down and eliminates Iosef, completely decimates Viggo’s empire, and kills the mob boss in a brutal final confrontation, ultimately heading home with a newly adopted pitbull puppy to find closure.</p>
+        </div>
+      </section>
+
+      <footer class="story-actions">
+        <button class="like-btn" id="storyLike" type="button">&#9825; <span class="like-count">0</span></button>
+        <a class="btn btn-outline" href="action.html">More Action Stories</a>
+        <a class="btn btn-primary" href="story.html">Browse All Stories</a>
+      </footer>
+    </article>
+
+    <nav class="story-pager" aria-label="More stories in Action">
+      <a class="pager-link" href="read-the-roundup-punishment.html"><span>&larr; Previous</span><strong>The Roundup: Punishment</strong></a>
+      <a class="pager-link pager-next" href="read-expendables.html"><span>Next &rarr;</span><strong>Expendables</strong></a>
+    </nav>
+  </main>
+
+  <div class="progress-label" id="progressText" aria-hidden="true">0% read</div>
+
+  <footer class="site-footer">
+    <p>&copy; All Rights Reserved 2026</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The Great Flood by Kim Byung-woo - Sci-Fi story on Story Book World.">
+  <title>The Great Flood | Story Book World</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="reader-page">
+  <div class="progress-track" aria-hidden="true"><div class="progress-bar" id="progressBar"></div></div>
+
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+      <div class="brand">
+        <img src="logo.png" alt="Story Book World logo" class="logo">
+        <h1>Now Reading</h1>
+      </div>
+      <div class="nav-links">
+        <a href="Home.html">Home</a>
+        <a href="genre.html" class="active" aria-current="page">Genre</a>
+        <a href="story.html">Stories</a>
+        <a href="about.html">About</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="reader-main">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="genre.html">Genre</a> &rsaquo;
+      <a href="scifi.html">Sci-Fi</a> &rsaquo;
+      <span>The Great Flood</span>
+    </nav>
+
+    <article class="story">
+      <header class="story-head">
+        <figure class="story-cover-wrap">
+          <img class="story-cover" src="flood.jpg" alt="The Great Flood book cover">
+        </figure>
+        <div class="story-info">
+          <p class="genre-tag">Sci-Fi</p>
+          <h2 class="story-title">The Great Flood</h2>
+          <p class="author">by <span>Kim Byung-woo</span></p>
+          <p class="story-stats">1 Chapter &middot; 1 min read</p>
+          <button class="btn btn-outline" id="synopsisBtn" type="button" aria-expanded="true" aria-controls="synopsis">Hide Synopsis</button>
+          <section class="synopsis" id="synopsis">
+            <h3>Synopsis</h3>
+            <p>Kim Da-mi and Park Hae-soo star in this 2025 South Korean sci-fi disaster film about an AI researcher and a security agent fighting to survive inside a sinking apartment building during a global extinction flood.</p>
+          </section>
+        </div>
+      </header>
+
+      <section class="chapter" aria-labelledby="chapter-title">
+        <h3 class="chapter-title" id="chapter-title">Chapter 1: When the Waters Rose</h3>
+        <div class="chapter-text">
+          <p>The movie begins as a high-stakes survival thriller after a massive asteroid hits Antarctica, melting the ice caps and causing a global mega-tsunami that submerges the city of Seoul. AI researcher Anna fights through a collapsing, flooded apartment complex to rescue her son, Ja-in, eventually being aided by Hee-jo, a security agent sent on a cryptic mission to extract her.</p>
+          <p>However, a massive mid-movie plot twist reveals that the apocalyptic disaster is actually a complex digital simulation being run over 21,000 times within an artificial intelligence matrix. In reality, the biological human race has already been wiped out, and the real Anna had uploaded her memories and trauma into an AI "Emotion Engine" before her death.</p>
+          <p>The simulation's true purpose is to force the synthetic model of Anna to develop authentic, unconditional human love and empathy for Ja-in—who is actually a synthetic AI prototype—thereby training and perfecting the emotional core of the new synthetic beings who will return to repopulate and rebuild Earth.</p>
+        </div>
+      </section>
+
+      <footer class="story-actions">
+        <button class="like-btn" id="storyLike" type="button">&#9825; <span class="like-count">0</span></button>
+        <a class="btn btn-outline" href="scifi.html">More Sci-Fi Stories</a>
+        <a class="btn btn-primary" href="story.html">Browse All Stories</a>
+      </footer>
+    </article>
+
+    <nav class="story-pager" aria-label="More stories in Sci-Fi">
+      <a class="pager-link" href="read-starwars-the-rise-of-skywalkers.html"><span>&larr; Previous</span><strong>Starwars: The Rise of Skywalkers</strong></a>
+      <a class="pager-link pager-next" href="read-project-hail-mary.html"><span>Next &rarr;</span><strong>Project Hail Mary</strong></a>
+    </nav>
+  </main>
+
+  <div class="progress-label" id="progressText" aria-hidden="true">0% read</div>
+
+  <footer class="site-footer">
+    <p>&copy; All Rights Reserved 2026</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

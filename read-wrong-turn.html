@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Wrong Turn by Alan B. McElroy - Horror story on Story Book World.">
+  <title>Wrong Turn | Story Book World</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="reader-page">
+  <div class="progress-track" aria-hidden="true"><div class="progress-bar" id="progressBar"></div></div>
+
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+      <div class="brand">
+        <img src="logo.png" alt="Story Book World logo" class="logo">
+        <h1>Now Reading</h1>
+      </div>
+      <div class="nav-links">
+        <a href="Home.html">Home</a>
+        <a href="genre.html" class="active" aria-current="page">Genre</a>
+        <a href="story.html">Stories</a>
+        <a href="about.html">About</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="reader-main">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="genre.html">Genre</a> &rsaquo;
+      <a href="horror.html">Horror</a> &rsaquo;
+      <span>Wrong Turn</span>
+    </nav>
+
+    <article class="story">
+      <header class="story-head">
+        <figure class="story-cover-wrap">
+          <img class="story-cover" src="wrong.jpg" alt="Wrong Turn book cover">
+        </figure>
+        <div class="story-info">
+          <p class="genre-tag">Horror</p>
+          <h2 class="story-title">Wrong Turn</h2>
+          <p class="author">by <span>Alan B. McElroy</span></p>
+          <p class="story-stats">1 Chapter &middot; 1 min read</p>
+          <button class="btn btn-outline" id="synopsisBtn" type="button" aria-expanded="true" aria-controls="synopsis">Hide Synopsis</button>
+          <section class="synopsis" id="synopsis">
+            <h3>Synopsis</h3>
+            <p>A popular American slasher-horror media franchise created by screenwriter Alan B. McElroy. The original 2003 film, directed by Rob Schmidt and starring Eliza Dushku and Desmond Harrington,</p>
+          </section>
+        </div>
+      </header>
+
+      <section class="chapter" aria-labelledby="chapter-title">
+        <h3 class="chapter-title" id="chapter-title">Chapter 1: A Detour Into the Woods</h3>
+        <div class="chapter-text">
+          <p>Follows college student Chris Flynn, who takes a detour through the backwoods of West Virginia to avoid a traffic jam, only to accidentally crash his car into a vehicle belonging to five stranded hikers. Left without cellular service, the group splits up to look for a phone and discovers an isolated mountain cabin filled with gruesome human remains.</p>
+          <p>They quickly realize they are being hunted by Three Finger, Saw Tooth, and One Eye—a trio of deformed, cannibalistic inbred mountain men who use cruel hunting traps to slaughter travelers for meat.</p>
+          <p>After a desperate and bloody game of cat-and-mouse through the forest, watchtowers, and rivers, most of the group is brutally murdered, leaving only Chris and a hiker named Jessie Burlingame to successfully fight back, kill the cannibals, and escape alive in the killers' own truck.</p>
+        </div>
+      </section>
+
+      <footer class="story-actions">
+        <button class="like-btn" id="storyLike" type="button">&#9825; <span class="like-count">0</span></button>
+        <a class="btn btn-outline" href="horror.html">More Horror Stories</a>
+        <a class="btn btn-primary" href="story.html">Browse All Stories</a>
+      </footer>
+    </article>
+
+    <nav class="story-pager" aria-label="More stories in Horror">
+      <a class="pager-link" href="read-saw.html"><span>&larr; Previous</span><strong>Saw</strong></a>
+      <a class="pager-link pager-next" href="read-obsession.html"><span>Next &rarr;</span><strong>Obsession</strong></a>
+    </nav>
+  </main>
+
+  <div class="progress-label" id="progressText" aria-hidden="true">0% read</div>
+
+  <footer class="site-footer">
+    <p>&copy; All Rights Reserved 2026</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

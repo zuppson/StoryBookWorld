@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Harry Potter by J.K. Rowling - Fantasy story on Story Book World.">
+  <title>Harry Potter | Story Book World</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="reader-page">
+  <div class="progress-track" aria-hidden="true"><div class="progress-bar" id="progressBar"></div></div>
+
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+      <div class="brand">
+        <img src="logo.png" alt="Story Book World logo" class="logo">
+        <h1>Now Reading</h1>
+      </div>
+      <div class="nav-links">
+        <a href="Home.html">Home</a>
+        <a href="genre.html" class="active" aria-current="page">Genre</a>
+        <a href="story.html">Stories</a>
+        <a href="about.html">About</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="reader-main">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="genre.html">Genre</a> &rsaquo;
+      <a href="fantasy.html">Fantasy</a> &rsaquo;
+      <span>Harry Potter</span>
+    </nav>
+
+    <article class="story">
+      <header class="story-head">
+        <figure class="story-cover-wrap">
+          <img class="story-cover" src="harry.jpg" alt="Harry Potter book cover">
+        </figure>
+        <div class="story-info">
+          <p class="genre-tag">Fantasy</p>
+          <h2 class="story-title">Harry Potter</h2>
+          <p class="author">by <span>J.K. Rowling</span></p>
+          <p class="story-stats">1 Chapter &middot; 1 min read</p>
+          <button class="btn btn-outline" id="synopsisBtn" type="button" aria-expanded="true" aria-controls="synopsis">Hide Synopsis</button>
+          <section class="synopsis" id="synopsis">
+            <h3>Synopsis</h3>
+            <p>(2001–2011) is a fantasy film saga about an orphaned boy who discovers he is a wizard and leaves his cruel relatives to attend Hogwarts, where he learns magic and fights dark forces.</p>
+          </section>
+        </div>
+      </header>
+
+      <section class="chapter" aria-labelledby="chapter-title">
+        <h3 class="chapter-title" id="chapter-title">Chapter 1: The Boy With the Lightning Scar</h3>
+        <div class="chapter-text">
+          <p>Upon entering the magical world, Harry Potter learns that his parents were murdered by the dark wizard Lord Voldemort, who mysteriously vanished after failing to kill infant Harry, leaving the boy with a lightning-shaped scar. Alongside his best friends Ron Weasley and Hermione Granger, Harry navigates the dangers of growing up at Hogwarts while Voldemort slowly rises back to power and gathers his loyal Death Eaters.</p>
+          <p>As the magical world plunges into a brutal wizarding war, Harry discovers that he is destiny's "Chosen One" and must hunt down Voldemort's Horcruxes—magical objects containing pieces of the Dark Lord's soul.</p>
+          <p>This quest ultimately culminates in an epic final battle at Hogwarts, where Harry sacrifices himself to destroy the final piece of Voldemort's soul within him, returns to life, and defeats the Dark Lord once and for all to restore peace.</p>
+        </div>
+      </section>
+
+      <footer class="story-actions">
+        <button class="like-btn" id="storyLike" type="button">&#9825; <span class="like-count">0</span></button>
+        <a class="btn btn-outline" href="fantasy.html">More Fantasy Stories</a>
+        <a class="btn btn-primary" href="story.html">Browse All Stories</a>
+      </footer>
+    </article>
+
+    <nav class="story-pager" aria-label="More stories in Fantasy">
+      <a class="pager-link" href="read-the-worst-witch.html"><span>&larr; Previous</span><strong>The Worst Witch</strong></a>
+      <a class="pager-link pager-next" href="read-percy-jackson-and-the-olympians.html"><span>Next &rarr;</span><strong>Percy Jackson and the Olympians</strong></a>
+    </nav>
+  </main>
+
+  <div class="progress-label" id="progressText" aria-hidden="true">0% read</div>
+
+  <footer class="site-footer">
+    <p>&copy; All Rights Reserved 2026</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

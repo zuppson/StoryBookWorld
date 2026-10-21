@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Spy X Family by Tatsuya Endo - Anime story on Story Book World.">
+  <title>Spy X Family | Story Book World</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="reader-page">
+  <div class="progress-track" aria-hidden="true"><div class="progress-bar" id="progressBar"></div></div>
+
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+      <div class="brand">
+        <img src="logo.png" alt="Story Book World logo" class="logo">
+        <h1>Now Reading</h1>
+      </div>
+      <div class="nav-links">
+        <a href="Home.html">Home</a>
+        <a href="genre.html" class="active" aria-current="page">Genre</a>
+        <a href="story.html">Stories</a>
+        <a href="about.html">About</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="reader-main">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="genre.html">Genre</a> &rsaquo;
+      <a href="anime.html">Anime</a> &rsaquo;
+      <span>Spy X Family</span>
+    </nav>
+
+    <article class="story">
+      <header class="story-head">
+        <figure class="story-cover-wrap">
+          <img class="story-cover" src="spy.jpg" alt="Spy X Family book cover">
+        </figure>
+        <div class="story-info">
+          <p class="genre-tag">Anime</p>
+          <h2 class="story-title">Spy X Family</h2>
+          <p class="author">by <span>Tatsuya Endo</span></p>
+          <p class="story-stats">1 Chapter &middot; 1 min read</p>
+          <button class="btn btn-outline" id="synopsisBtn" type="button" aria-expanded="true" aria-controls="synopsis">Hide Synopsis</button>
+          <section class="synopsis" id="synopsis">
+            <h3>Synopsis</h3>
+            <p>2022 anime based on the manga series by Tatsuya Endo. It is produced by Wit Studio and CloverWorks, and premiered in Japan on April 9, 2022.</p>
+          </section>
+        </div>
+      </header>
+
+      <section class="chapter" aria-labelledby="chapter-title">
+        <h3 class="chapter-title" id="chapter-title">Chapter 1: Operation Strix</h3>
+        <div class="chapter-text">
+          <p>To prevent a major conflict between the nations of Westalis and Ostania under Operation Strix, master spy Twilight adopts the persona of psychiatrist Loid Forger and builds a mock family to get close to the reclusive politician Donovan Desmond.</p>
+          <p>He adopts Anya, a young telepath who secretly knows his real identity, and marries Yor Briar, a quiet city hall worker who is actually a lethal hitman known as the Thorn Princess.</p>
+          <p>As Anya struggles to earn academic stars at the elite Eden Academy so Loid can approach his target, and as they later adopt a future-predicting dog named Bond, the trio must constantly hide their true professions from one another while slowly developing genuine, heartfelt affection as a real family.</p>
+        </div>
+      </section>
+
+      <footer class="story-actions">
+        <button class="like-btn" id="storyLike" type="button">&#9825; <span class="like-count">0</span></button>
+        <a class="btn btn-outline" href="anime.html">More Anime Stories</a>
+        <a class="btn btn-primary" href="story.html">Browse All Stories</a>
+      </footer>
+    </article>
+
+    <nav class="story-pager" aria-label="More stories in Anime">
+      <a class="pager-link" href="read-boruto-two-blue-vortex.html"><span>&larr; Previous</span><strong>Boruto: Two Blue Vortex</strong></a>
+      <a class="pager-link pager-next" href="read-black-clover-2nd-season.html"><span>Next &rarr;</span><strong>Black Clover 2nd Season</strong></a>
+    </nav>
+  </main>
+
+  <div class="progress-label" id="progressText" aria-hidden="true">0% read</div>
+
+  <footer class="site-footer">
+    <p>&copy; All Rights Reserved 2026</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

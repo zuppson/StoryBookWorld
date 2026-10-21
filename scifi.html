@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Read Sci-Fi stories on Story Book World.">
+  <title>Sci-Fi | Story Book World</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+      <div class="brand">
+        <img src="logo.png" alt="Story Book World logo" class="logo">
+        <h1>Sci‑Fi Stories</h1>
+      </div>
+      <div class="nav-links">
+        <a href="Home.html">Home</a>
+        <a href="genre.html" class="active" aria-current="page">Genre</a>
+        <a href="story.html">Stories</a>
+        <a href="about.html">About</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="genre-page">
+    <section class="story-grid" aria-label="Sci-Fi stories">
+      <article class="story-card" data-category="scifi">
+        <img src="flood.jpg" alt="The Great Flood book cover" class="cover">
+        <div class="card-body">
+          <p class="genre-tag">Sci-Fi</p>
+          <h3>The Great Flood</h3>
+          <p class="author">by Kim Byung-woo</p>
+          <p class="synopsis">Kim Da-mi and Park Hae-soo star in this 2025 South Korean sci-fi disaster film about an AI researcher and a security agent fighting to survive inside a sinking apartment building during a global extinction flood.</p>
+          <div class="card-actions">
+            <a class="btn btn-primary" href="read-the-great-flood.html">Read Story</a>
+            <button class="btn btn-outline read-more-btn" type="button">Read More</button>
+          </div>
+        </div>
+      </article>
+      <article class="story-card" data-category="scifi">
+        <img src="hail.jpg" alt="Project Hail Mary book cover" class="cover">
+        <div class="card-body">
+          <p class="genre-tag">Sci-Fi</p>
+          <h3>Project Hail Mary</h3>
+          <p class="author">by Andy Weir</p>
+          <p class="synopsis">2026 SciFi movie with Ryan Gosling stars as an amnesiac teacher on a lonely space mission to save Earth from a sun-eating microbe, teaming up with an intelligent spider-like alien to stop total extinction.</p>
+          <div class="card-actions">
+            <a class="btn btn-primary" href="read-project-hail-mary.html">Read Story</a>
+            <button class="btn btn-outline read-more-btn" type="button">Read More</button>
+          </div>
+        </div>
+      </article>
+      <article class="story-card" data-category="scifi">
+        <img src="starwars.jpg" alt="Starwars: The Rise of Skywalkers book cover" class="cover">
+        <div class="card-body">
+          <p class="genre-tag">Sci-Fi</p>
+          <h3>Starwars: The Rise of Skywalkers</h3>
+          <p class="author">by J.J. Abrams</p>
+          <p class="synopsis">(2019) Follows the Resistance as they face the return of Emperor Palpatine. Meanwhile, Rey completes her Jedi training while navigating her mysterious past and her intense, Force-connected bond with Kylo Ren.</p>
+          <div class="card-actions">
+            <a class="btn btn-primary" href="read-starwars-the-rise-of-skywalkers.html">Read Story</a>
+            <button class="btn btn-outline read-more-btn" type="button">Read More</button>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; All Rights Reserved 2026</p>
+  </footer>
+
+  <div class="story-popup" role="dialog" aria-modal="true" aria-label="The Great Flood details">
+    <div class="popup-box">
+      <img src="flood.jpg" alt="The Great Flood full story view">
+      <h3>The Great Flood</h3>
+      <p class="popup-meta">by Kim Byung-woo &middot; Sci-Fi</p>
+      <p>The movie begins as a high-stakes survival thriller after a massive asteroid hits Antarctica, melting the ice caps and causing a global mega-tsunami that submerges the city of Seoul. AI researcher Anna fights through a collapsing, flooded apartment complex to rescue her son, Ja-in, eventually being aided by Hee-jo, a security agent sent on a cryptic mission to extract her. However, a massive mid-movie plot twist reveals that the apocalyptic disaster is actually a complex digital simulation being run over 21,000 times within an artificial intelligence matrix. In reality, the biological human race has already been wiped out, and the real Anna had uploaded her memories and trauma into an AI "Emotion Engine" before her death. The simulation's true purpose is to force the synthetic model of Anna to develop authentic, unconditional human love and empathy for Ja-in—who is actually a synthetic AI prototype—thereby training and perfecting the emotional core of the new synthetic beings who will return to repopulate and rebuild Earth.</p>
+      <button class="popup-close" type="button">Close</button>
+    </div>
+  </div>
+  <div class="story-popup" role="dialog" aria-modal="true" aria-label="Project Hail Mary details">
+    <div class="popup-box">
+      <img src="hail.jpg" alt="Project Hail Mary full story view">
+      <h3>Project Hail Mary</h3>
+      <p class="popup-meta">by Andy Weir &middot; Sci-Fi</p>
+      <p>A middle-school science teacher and former molecular biologist named Ryland Grace is recruited by Eva Stratt to investigate a mysterious space microbe called Astrophase that is draining energy from the sun and causing global cooling. After discovering that the nearby star Tau Ceti is mysteriously immune to the parasite, Grace joins a desperate one-way interstellar mission aboard the Hail Mary spacecraft. After waking up from a long-duration coma with total amnesia next to his two deceased crewmates, he pieces together his past, encounters an alien engineer he nicknames Rocky whose star is also dying, and works alongside him to develop a cure. After solving the crisis, Grace realizes Rocky's ship has lost its power source, prompting him to launch his data probes back to Earth and burn his remaining fuel to save his alien friend.</p>
+      <button class="popup-close" type="button">Close</button>
+    </div>
+  </div>
+  <div class="story-popup" role="dialog" aria-modal="true" aria-label="Starwars: The Rise of Skywalkers details">
+    <div class="popup-box">
+      <img src="starwars.jpg" alt="Starwars: The Rise of Skywalkers full story view">
+      <h3>Starwars: The Rise of Skywalkers</h3>
+      <p class="popup-meta">by J.J. Abrams &middot; Sci-Fi</p>
+      <p>Follows Rey, Finn, and Poe Dameron as they race against time to locate Exegol, a hidden Sith world where a resurrected Emperor Palpatine has secretly constructed a massive armada called the Final Order. Kylo Ren hunts Rey down to bring her to Palpatine, only to discover that Rey is actually the Emperor's granddaughter. After a series of fierce confrontations—including a climactic duel on the ruins of the Death Star where Leia Organa passes away to redeem her son—Kylo abandons the dark side and reclaims his identity as Ben Solo. Rey travels to Exegol to confront Palpatine, who attempts to absorb her and Ben's unique Force dyad power to restore his youth. Supported by the spirits of past Jedi and a massive civilian fleet assembled by Lando Calrissian to crush the Sith armada, Rey channels the power of all Jedi to permanently destroy Palpatine at the cost of her life. Ben uses his remaining life force to revive her, dying in the process, which allows Rey to return to Tatooine, bury the lightsabers of Luke and Leia, and honor their legacy by adopting the name Rey Skywalker.</p>
+      <button class="popup-close" type="button">Close</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
